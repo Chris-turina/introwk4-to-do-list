@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     var newTask = new Task(inputtedTask, inputtedDetails);
 
-    $("ul#list-tasks").append("<li><span class='task'>" + newTask.taskOne + " <button type='button'>button</button></span></li>");
+    $("ul#list-tasks").append("<li><span class='task'>" + newTask.taskOne + " </span><span class= 'btn btn-primary'>Remove Task</span></li>");
 
     $(".task").last().click(function() {
       $("#show-tasks").show();
@@ -24,9 +24,14 @@ $(document).ready(function() {
       $(".task-details").text(newTask.taskDetails);
     });
 
-    $("#list-tasks").children("li").click(function() {
-      $(this).remove();
+    $("#list-tasks li").children(".btn").click(function() {
+      $(this).parent().remove();
+      $("#show-tasks").hide();
     });
+
+    // $("#list-tasks").children("li").click(function() {
+    //   $(this).remove();
+    // });
 
     $("input#input-task").val("");
     $("textarea#task-details").val("");
