@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     var newTask = new Task(inputtedTask, inputtedDetails);
 
-    $("ul#list-tasks").append("<li><span class='task'>" + newTask.taskOne + " </span><span class= 'btn btn-primary'>Remove Task</span></li>");
+    $("ul#list-tasks").append("<li><span class='task'>" + newTask.taskOne +"</span> <span class= 'btn btn-danger btn-sm'>Remove Task</span></li>");
 
     $(".task").last().click(function() {
       $("#show-tasks").show();

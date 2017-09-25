@@ -1,0 +1,30 @@
+#show-tasks {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+li {
+  font-size: 24px;
+}
+
+.task {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../img/notepad.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.well {
+  border: 7px solid black;
+
+}
