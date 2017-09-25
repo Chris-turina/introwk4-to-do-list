@@ -19,6 +19,10 @@
               <label for="task">Enter Task Here:</label>
               <input id="input-task" class="form-control" type="text" required>
             </div>
+            <div class="form-group">
+              <label for="task-details">Enter Task Details Here:</label>
+              <textarea rows="5" id="task-details" class="form-control" placeholder="Details."></textarea>
+            </div>
             <button class="btn btn-info" type="submit">Submit Tasks</button>
           </form>
 
@@ -30,7 +34,9 @@
           <div id="show-tasks">
             <h2></h2>
 
-            <p>task1:<span class="task-one"></span></p>
+            <p>Task: <span class="task-one"></span></p>
+            <p>Details: <span class="task-details"></span></p>
+            <button type="button" class="btn btn-danger" id="remove-task">Remove</button>
           </div>
         </div>
 
